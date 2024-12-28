@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Centrar texto en todo el cuerpo */
+}
+
+/* Estilo de la cabecera y el menú */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .menu li {
+    margin: 0 15px;
+}
+
+.nav .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav .menu li a:hover {
+    background-color: #555;
+}
+
+/* Estilos de las secciones */
+.section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center; /* Centrar texto en las secciones */
+}
+
+.section:nth-child(even) {
+    background-color: #999999;
+}
+
+.section:nth-child(odd) {
+    background-color: #0000006b;
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilo del carrusel y la descripción */
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    background-color: #ddd;
+    text-align: center; /* Centrar texto en la descripción */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+/* Para teléfonos (menos de 768px) */
+@media (max-width: 767px) {
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .menu li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px 10px;
+    }
+
+    .header, .footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+}
+
+/* Para tabletas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav .menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav .menu li {
+        margin: 0 10px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    .header, .footer {
+        padding: 15px 10px;
+    }
+}
+
+/* Para PC (más de 1024px) */
+@media (min-width: 1025px) {
+    .nav .menu {
+        justify-content: center;
+    }
+
+    .nav .menu li {
+        margin: 0 15px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .header, .footer {
+        padding: 10px 0;
+    }
+}
